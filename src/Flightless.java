@@ -36,11 +36,12 @@ public class Flightless extends Birds {
 
     @Override
     public String toString() {
-        return "Flightless{" +
-                "typeOfMovement='" + typeOfMovement + '\'' +
-                ", name='" + name + '\'' +
-                ", year=" + year +
-                '}';
+        return "Нелетающие: " +
+                "Тип перемещения:" + typeOfMovement + '\'' +
+                "Животное: " + name + '\'' +
+                ",Возраст: " + year + '\n' +" Среда обитания: "
+                + getEnvironmentObit()
+                ;
     }
 }
 

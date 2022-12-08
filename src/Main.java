@@ -25,5 +25,15 @@ public class Main {
         Amphibians snake = new Amphibians("Уж пресноводный", 3, "озеро или речка");
         System.out.println(frog);
         System.out.println(snake);
+
+        Flightless pavlin = new Flightless("Павлин", 5, "тёплые края",
+                "По земле");
+        Flightless pinguin = new Flightless("Пингвин", 5, "Антарктика",
+                "По земле");
+        Flightless dodo = new Flightless("Птица додо", 5, "Жаркие страны",
+                "По земле");
+        System.out.println(dodo);
+        System.out.println(pavlin);
+        System.out.println(pinguin);
     }
 }
