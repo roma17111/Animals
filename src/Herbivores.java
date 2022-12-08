@@ -1,7 +1,7 @@
 import java.util.Objects;
 
 public class Herbivores extends Mammal {
-    String typeOfFood;
+   private final String typeOfFood;
 
     public Herbivores(String name, int year, String environmentObit, String typeOfFood) {
         super(name, year, environmentObit);
@@ -15,9 +15,6 @@ public class Herbivores extends Mammal {
         return typeOfFood;
     }
 
-    public void setTypeOfFood(String typeOfFood) {
-        this.typeOfFood = typeOfFood;
-    }
 
     @Override
     public boolean equals(Object o) {

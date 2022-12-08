@@ -2,7 +2,7 @@ import java.util.Objects;
 
 public class Predator extends Mammal{
 
-    String typeOfFood;
+    private final String typeOfFood;
 
     public Predator(String name, int year, String environmentObit, String typeOfFood) {
         super(name, year, environmentObit);
@@ -17,9 +17,7 @@ public class Predator extends Mammal{
         return typeOfFood;
     }
 
-    public void setTypeOfFood(String typeOfFood) {
-        this.typeOfFood = typeOfFood;
-    }
+
 
     @Override
     public boolean equals(Object o) {

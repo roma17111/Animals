@@ -1,7 +1,7 @@
 import java.util.Objects;
 
 public class Flightless extends Birds {
-    String typeOfMovement;
+    private final String typeOfMovement;
 
     public Flightless(String name, int year, String environmentObit, String typeOfMovement) {
         super(name, year, environmentObit);
@@ -15,9 +15,6 @@ public class Flightless extends Birds {
         return typeOfMovement;
     }
 
-    public void setTypeOfMovement(String typeOfMovement) {
-        this.typeOfMovement = typeOfMovement;
-    }
 
     @Override
     public boolean equals(Object o) {

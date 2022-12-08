@@ -2,7 +2,7 @@ import java.util.Objects;
 
 public class Mammal extends Animals{
 
-    private String environmentObit;
+    private final String environmentObit;
     private int speedMove;
 
     public Mammal(String name, int year, String environmentObit) {
@@ -17,9 +17,6 @@ public class Mammal extends Animals{
         return environmentObit;
     }
 
-    public void setEnvironmentObit(String environmentObit) {
-        this.environmentObit = environmentObit;
-    }
 
     public int getSpeedMove() {
         return speedMove;

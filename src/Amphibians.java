@@ -2,7 +2,7 @@ import java.util.Objects;
 
 public class Amphibians extends Animals{
 
-    private String environmentObit;
+    private final String environmentObit;
 
     public Amphibians(String name, int year, String environmentObit) {
         super(name, year);
@@ -16,9 +16,6 @@ public class Amphibians extends Animals{
         return environmentObit;
     }
 
-    public void setEnvironmentObit(String environmentObit) {
-        this.environmentObit = environmentObit;
-    }
 
     @Override
     public void eat() {
