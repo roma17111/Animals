@@ -1,6 +1,6 @@
 import java.util.Objects;
 
-public  class Animals {
+public  abstract class Animals {
 
     String name;
     int year;
@@ -10,13 +10,11 @@ public  class Animals {
         this.year = year;
     }
 
-    public void eat() {
-    }
+    public abstract void eat();
 
     public void sleep() {
     }
-    public void go() {
-    }
+    public abstract void go();
 
     public String getName() {
         return name;

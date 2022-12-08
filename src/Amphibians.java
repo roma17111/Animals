@@ -21,6 +21,16 @@ public class Amphibians extends Animals{
     }
 
     @Override
+    public void eat() {
+
+    }
+
+    @Override
+    public void go() {
+
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
