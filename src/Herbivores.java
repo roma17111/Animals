@@ -1,11 +1,15 @@
 import java.util.Objects;
 
 public class Herbivores extends Mammal {
-   private final String typeOfFood;
+    private final String typeOfFood;
 
-    public Herbivores(String name, int year, String environmentObit, String typeOfFood) {
-        super(name, year, environmentObit);
-        this.typeOfFood = typeOfFood;
+    public Herbivores(String name, int year, String environmentObit, int speedMove, String typeOfFood) {
+        super(name, year, environmentObit, speedMove);
+        if (typeOfFood == null || typeOfFood.isEmpty()) {
+            this.typeOfFood = "Травка";
+        } else {
+            this.typeOfFood = typeOfFood;
+        }
     }
 
     public void graze() {

@@ -1,13 +1,18 @@
 import java.util.Objects;
 
-public class Predator extends Mammal{
+public class Predator extends Mammal {
 
     private final String typeOfFood;
 
-    public Predator(String name, int year, String environmentObit, String typeOfFood) {
-        super(name, year, environmentObit);
-        this.typeOfFood = typeOfFood;
-    }
+    public Predator(String name, int year, String environmentObit, int speedMove, String typeOfFood) {
+        super(name, year, environmentObit, speedMove);
+            if (typeOfFood == null || typeOfFood.isEmpty()) {
+                this.typeOfFood = "Мясо";
+            } else{
+                this.typeOfFood = typeOfFood;
+            }
+
+}
 
     public void hunt() {
 
@@ -16,7 +21,6 @@ public class Predator extends Mammal{
     public String getTypeOfFood() {
         return typeOfFood;
     }
-
 
 
     @Override

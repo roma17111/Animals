@@ -1,13 +1,17 @@
 import java.util.Objects;
 
-public class Mammal extends Animals{
+public class Mammal extends Animals {
 
     private final String environmentObit;
     private int speedMove;
 
-    public Mammal(String name, int year, String environmentObit) {
+    public Mammal(String name, int year, String environmentObit, int speedMove) {
         super(name, year);
-        this.environmentObit = environmentObit;
+        if (environmentObit == null || environmentObit.isEmpty()) {
+            this.environmentObit = "Суша";
+        } else {
+            this.environmentObit = environmentObit;
+        }setSpeedMove(speedMove);
     }
 
     public void walk() {
@@ -23,7 +27,11 @@ public class Mammal extends Animals{
     }
 
     public void setSpeedMove(int speedMove) {
-        this.speedMove = speedMove;
+        if (speedMove < 0 || speedMove > 100) {
+            this.speedMove = 30;
+        } else {
+            this.speedMove = speedMove;
+        }
     }
 
     @Override

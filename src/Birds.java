@@ -1,11 +1,15 @@
 import java.util.Objects;
 
-public class Birds extends Animals{
+public class Birds extends Animals {
     private final String environmentObit;
 
     public Birds(String name, int year, String environmentObit) {
         super(name, year);
-        this.environmentObit = environmentObit;
+        if (environmentObit == null || environmentObit.isEmpty()) {
+            this.environmentObit = "Арктика";
+        } else {
+            this.environmentObit = environmentObit;
+        }
     }
 
     public void hunt() {
@@ -15,7 +19,6 @@ public class Birds extends Animals{
         return environmentObit;
     }
 
-    
 
     @Override
     public void eat() {

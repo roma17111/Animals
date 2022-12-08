@@ -1,19 +1,20 @@
 import java.util.Objects;
 
-public  abstract class Animals {
+public abstract class Animals {
 
     String name;
     int year;
 
     public Animals(String name, int year) {
-        this.name = name;
-        this.year = year;
+        setName(name);
+        setYear(year);
     }
 
     public abstract void eat();
 
     public void sleep() {
     }
+
     public abstract void go();
 
     public String getName() {
@@ -21,7 +22,11 @@ public  abstract class Animals {
     }
 
     public void setName(String name) {
-        this.name = name;
+        if (name == null || name.isEmpty()) {
+            this.name = "Стандартная кличка";
+        } else {
+            this.name = name;
+        }
     }
 
     public int getYear() {
@@ -29,8 +34,12 @@ public  abstract class Animals {
     }
 
     public void setYear(int year) {
-        this.year = year;
+        if (year <= 0) {
+            this.year = 5;
+        } else{
+            this.year = year;
     }
+}
 
     @Override
     public boolean equals(Object o) {

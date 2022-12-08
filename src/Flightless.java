@@ -5,7 +5,11 @@ public class Flightless extends Birds {
 
     public Flightless(String name, int year, String environmentObit, String typeOfMovement) {
         super(name, year, environmentObit);
-        this.typeOfMovement = typeOfMovement;
+        if (typeOfMovement == null || typeOfMovement.isEmpty()) {
+            this.typeOfMovement = "Небо";
+        } else {
+            this.typeOfMovement = typeOfMovement;
+        }
     }
 
     public void walk() {

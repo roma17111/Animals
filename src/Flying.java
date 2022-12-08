@@ -1,11 +1,15 @@
 import java.util.Objects;
 
 public class Flying extends Birds {
-   private final String typeOfMovement;
+    private final String typeOfMovement;
 
     public Flying(String name, int year, String environmentObit, String typeOfMovement) {
         super(name, year, environmentObit);
-        this.typeOfMovement = typeOfMovement;
+        if (typeOfMovement == null || typeOfMovement.isEmpty()) {
+            this.typeOfMovement = "Земля";
+        } else {
+            this.typeOfMovement = typeOfMovement;
+        }
     }
 
     public void fly() {
@@ -14,7 +18,6 @@ public class Flying extends Birds {
     public String getTypeOfMovement() {
         return typeOfMovement;
     }
-
 
 
     @Override

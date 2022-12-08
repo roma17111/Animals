@@ -1,12 +1,16 @@
 import java.util.Objects;
 
-public class Amphibians extends Animals{
+public class Amphibians extends Animals {
 
     private final String environmentObit;
 
     public Amphibians(String name, int year, String environmentObit) {
         super(name, year);
-        this.environmentObit = environmentObit;
+        if (environmentObit == null || environmentObit.isEmpty()) {
+            this.environmentObit = "Море";
+        } else {
+            this.environmentObit = environmentObit;
+        }
     }
 
     public void hunt() {
