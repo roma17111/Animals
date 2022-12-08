@@ -36,10 +36,11 @@ public class Flying extends Birds {
 
     @Override
     public String toString() {
-        return "Flying{" +
-                "typeOfMovement='" + typeOfMovement + '\'' +
-                ", name='" + name + '\'' +
-                ", year=" + year +
-                '}';
+        return "Летающие: " +
+                "Птица: " + name + '\n' +
+                "Среда рбитания: " + getEnvironmentObit() + '\n' +
+
+                ",Возраст" + year
+                ;
     }
 }

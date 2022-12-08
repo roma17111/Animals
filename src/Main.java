@@ -35,5 +35,14 @@ public class Main {
         System.out.println(dodo);
         System.out.println(pavlin);
         System.out.println(pinguin);
+        Flying chayka = new Flying("Чайка", 3,
+                "Средняя полоса", "Летающая");
+        Flying albatros = new Flying("Альбатрос", 2,
+                "Средняя полоса", "Летающая");
+        Flying sokol= new Flying("сокол", 1,
+                "Средняя полоса", "Летающая");
+        System.out.println(sokol);
+        System.out.println(chayka);
+        System.out.println(albatros);
     }
 }

@@ -40,8 +40,9 @@ public class Predator extends Mammal {
     @Override
     public String toString() {
         return "Млекопетающие: " +
-                "Тип еды: " + typeOfFood + '\n' +
                 "Животное: " + name + '\n' +
+                "Тип еды: " + typeOfFood + '\n' +
+
                 "Возраст: " + year
                 ;
     }

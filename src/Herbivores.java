@@ -37,8 +37,9 @@ public class Herbivores extends Mammal {
     @Override
     public String toString() {
         return "Травоядные: " +
-                "Тип еды: " + typeOfFood + '\n' +
                 "Животное: " + name + '\n' +
+                "Тип еды: " + typeOfFood + '\n' +
+
                 "Возраст: " + year
                 ;
     }

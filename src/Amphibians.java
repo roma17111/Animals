@@ -48,8 +48,9 @@ public class Amphibians extends Animals {
     @Override
     public String toString() {
         return "Земноводные: " +
-                "Среда обидания: " + environmentObit + '\n' +
                 "Животное: " + name + '\n' +
+                "Среда обидания: " + environmentObit + '\n' +
+
                 "Возраст: " + year
                 ;
     }

@@ -37,8 +37,9 @@ public class Flightless extends Birds {
     @Override
     public String toString() {
         return "Нелетающие: " +
+                "Птица : " + name + '\'' +
                 "Тип перемещения:" + typeOfMovement + '\'' +
-                "Животное: " + name + '\'' +
+
                 ",Возраст: " + year + '\n' +" Среда обитания: "
                 + getEnvironmentObit()
                 ;
