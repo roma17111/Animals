@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -7,6 +9,7 @@ public class Main {
                 56, "трава, растения");
         Herbivores horse = new Herbivores("Лошадь", 5,
                 "Конюшня, луга, поля", 45, "Сено отборное");
+        Herbivores[] herbivores = {gazelle, giraffe, horse};
         System.out.println(horse);
         System.out.println(giraffe);
         System.out.println(gazelle);
@@ -17,12 +20,14 @@ public class Main {
                 null, 14, "Мясо");
         Predator bear = new Predator("медведь", 14,
                 "леса", 14, "Мясо");
+        Predator [] predator = {giena, tiger, bear};
         System.out.println(giena);
         System.out.println(tiger);
         System.out.println(bear);
 
         Amphibians frog = new Amphibians("Лягушка", 1, "Водоём");
         Amphibians snake = new Amphibians("Уж пресноводный", 3, "озеро или речка");
+        Amphibians[] amphibians = {snake, frog};
         System.out.println(frog);
         System.out.println(snake);
 
@@ -32,6 +37,7 @@ public class Main {
                 "По земле");
         Flightless dodo = new Flightless("Птица додо", 5, "Жаркие страны",
                 "По земле");
+        Flightless[] flightless = {pavlin, pinguin, dodo};
         System.out.println(dodo);
         System.out.println(pavlin);
         System.out.println(pinguin);
@@ -41,8 +47,16 @@ public class Main {
                 "Средняя полоса", "Летающая");
         Flying sokol= new Flying("сокол", 1,
                 "Средняя полоса", "Летающая");
+        Flying[] flying = {sokol, albatros, chayka};
         System.out.println(sokol);
         System.out.println(chayka);
         System.out.println(albatros);
+
+        System.out.println(gazelle.equals(giraffe));
+        System.out.println(gazelle.equals(horse));
+        System.out.println(horse.equals(giraffe));
+        System.out.println(flying.equals(flightless));
+        System.out.println(predator.equals(amphibians));
+
     }
-}
+  }

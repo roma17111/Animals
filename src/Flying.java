@@ -40,7 +40,7 @@ public class Flying extends Birds {
                 "Птица: " + name + '\n' +
                 "Среда рбитания: " + getEnvironmentObit() + '\n' +
 
-                ",Возраст" + year
+                "Возраст" + year
                 ;
     }
 }
