@@ -39,11 +39,11 @@ public class Predator extends Mammal {
 
     @Override
     public String toString() {
-        return "Predator{" +
-                "typeOfFood='" + typeOfFood + '\'' +
-                ", name='" + name + '\'' +
-                ", year=" + year +
-                '}';
+        return "Млекопетающие: " +
+                "Тип еды: " + typeOfFood + '\n' +
+                "Животное: " + name + '\n' +
+                "Возраст: " + year
+                ;
     }
 
 }

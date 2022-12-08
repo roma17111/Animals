@@ -47,10 +47,10 @@ public class Amphibians extends Animals {
 
     @Override
     public String toString() {
-        return "Amphibians{" +
-                "environmentObit='" + environmentObit + '\'' +
-                ", name='" + name + '\'' +
-                ", year=" + year +
-                '}';
+        return "Земноводные: " +
+                "Среда обидания: " + environmentObit + '\n' +
+                "Животное: " + name + '\n' +
+                "Возраст: " + year
+                ;
     }
 }
