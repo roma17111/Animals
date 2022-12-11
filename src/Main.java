@@ -20,7 +20,7 @@ public class Main {
                 null, 14, "Мясо");
         Predator bear = new Predator("медведь", 14,
                 "леса", 14, "Мясо");
-        Predator [] predator = {giena, tiger, bear};
+        Predator[] predator = {giena, tiger, bear};
         System.out.println(giena);
         System.out.println(tiger);
         System.out.println(bear);
@@ -45,7 +45,7 @@ public class Main {
                 "Средняя полоса", "Летающая");
         Flying albatros = new Flying("Альбатрос", 2,
                 "Средняя полоса", "Летающая");
-        Flying sokol= new Flying("сокол", 1,
+        Flying sokol = new Flying("сокол", 1,
                 "Средняя полоса", "Летающая");
         Flying[] flying = {sokol, albatros, chayka};
         System.out.println(sokol);
@@ -57,6 +57,21 @@ public class Main {
         System.out.println(horse.equals(giraffe));
         System.out.println(flying.equals(flightless));
         System.out.println(predator.equals(amphibians));
+        pavlin.equals(pinguin);
+        checkEquals(pavlin, pinguin,pinguin,horse,snake,sokol);
 
     }
-  }
+
+
+    public static void checkEquals(Animals... animals) {
+        for (int i = 0; i < animals.length; i++) {
+            for (int j = i + 1; j < animals.length; j++) {
+                if (animals[i].equals(animals[j])) {
+                    System.out.println("Есть одинаковые животные " + animals[i]);
+                }
+
+            }
+        }
+
+    }
+}
